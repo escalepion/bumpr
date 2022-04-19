@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "fortx";
+  src: url("./lib/fonts/FortXCondensedExtraBold.woff2");
+}
+
+@font-face {
+  font-family: "universal550";
+  src: url("./lib/fonts/UniversalSans550.woff2");
+}
+
+@font-face {
+  font-family: "universal850";
+  src: url("./lib/fonts/UniversalSans850.woff2");
+}
