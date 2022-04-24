@@ -20,14 +20,18 @@ const PayInfo = () => {
               <PayInfoItem 
                 title="FIX IT"
                 desc="Your customers bring their vehicle to you. You repair and service the car. Everything just like it works right now."
+                number="1"
               />
               <PayInfoItem 
                 title="SPLIT IT"
                 desc="When the customer gets their bill or quote, Bumper either integrates into your existing online checkout or can be done on-site before you hand back the keys. All in just a few clicks."
+                number="2"
               />
               <PayInfoItem 
                 title="SORTED "
                 desc="You and your customer part ways happy. You’re paid in full direct from Bumper, the customer repays Bumper over their chosen payment plan."
+                number="3"
+                last
               />
             </div>
             <div className='py-2'>

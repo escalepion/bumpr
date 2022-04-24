@@ -9,6 +9,13 @@ module.exports = {
         universal550: ["universal550"],
         universal850: ["universal850"],
       },
+      backgroundImage: {
+        'benefits-bg': "url('./assets/images/benefits_bg.png')",
+        'basket-icon': "url('./assets/images/basket_icon.svg')",
+        'secure-icon': "url('./assets/images/secure_icon.svg')",
+        'low-icon': "url('./assets/images/low_icon.svg')",
+        'customer': "url('./assets/images/customer.png')",
+       }
     },
     container: {
       center: true,
@@ -29,6 +36,7 @@ module.exports = {
       'dark-mint': '#289B50',
       'slate-blue': '#5A698C',
       'smooth-gray': '#CDD2DC',
+      'pole-grey': '#E6E6E6',
     },
   },
   plugins: [],

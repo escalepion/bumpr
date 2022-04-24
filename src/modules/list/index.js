@@ -15,7 +15,10 @@ const List = ({ list = [] }) => {
       <div className='text-4xl text-white text-universal850 font-bold mb-4'>Interested Dealerships</div>
       <div className='mb-4'>
         <BoxWrapper> 
-          <div>Search Company</div>
+          <div className='mb-4'>
+            <i class="fa-solid fa-building" style={{ color: '#FF733C' }}></i>
+            <span className='font-bold ml-2'>Search Company</span>
+          </div>
           <div>
             <input 
               type='text'
