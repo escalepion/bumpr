@@ -12,7 +12,7 @@ const PayNow = () => (
       </div>
       <div className='uppercase font-fortx text-6xl text-pinkish-orange'>Accept payments anywhere, anytime</div>
       <div className='font-universal850 font-bold text-active-bg-dark pt-12 pb-8'>Benefits of PayNow</div>
-      <div className='flex justify-between'>
+      <div className='flex flex-col lg:flex-row lg:justify-between'>
         <PayNowCard
          title="Secure"
          desc='Prevent customers from revealing sensitive information over the phone, GDPR safe and tested.'

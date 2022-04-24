@@ -4,10 +4,10 @@ import BenefitCard from 'components/benefitCard';
 
 const Benefits = () => {
   return (
-    <div className="bg-benefits-bg">
-      <div className='lg:container pt-12 pb-14'>
+    <div className="bg-benefits-bg bg-repeat-y lg:bg-repeat-x">
+      <div className='container pt-12 pb-14'>
         <div className='font-fortx text-[33px] text-white uppercase font-bold'>Benefits our other parners have noticed offering PayLater</div>
-        <div className='flex'>
+        <div className='flex flex-col lg:flex-row'>
           <BenefitCard
             title="71"
             desc="of customers authorised more work because they split their bill with Bumper"

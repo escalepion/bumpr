@@ -3,7 +3,7 @@ import React from 'react';
 import ArnoldImg from 'assets/images/arnold.svg';
 
 const CustomerCard = () => (
-  <div className='max-w-[24.375rem] bg-white rounded-3xl p-6'>
+  <div className='max-w-[24.375rem] bg-white rounded-tr-3xl rounded-br-3xl lg:rounded-3xl p-6'>
     <div className='font-univesal850 font-bold text-active-bg-dark'>“Est sem nisl morbi praesent tempor augue in venenatis dolor massa viverra parturient at ligula.</div>
     <div className='mt-1'>
       Ad magnis in justo lobortis vestibulum a adipiscing nisl magnis sociosqu 

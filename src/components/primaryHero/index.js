@@ -10,10 +10,12 @@ import carBg from 'assets/images/car-bg.jpg';
 const PrimaryHero = () => {
   return(
     <div className="w-full relative pb-10">
-      <div className='absolute left-0 top-0 z-[-1] h-full w-full overflow-hidden'><img alt="hero bg" src={carBg} /></div>
+      <div className='absolute left-0 top-0 z-[-1] h-full w-full overflow-hidden bg-car-bg bg-cover'>
+        {/* <img alt="hero bg" src={carBg} /> */}
+      </div>
       <div className='absolute left-0 top-0 z-[-1] opacity-80 mix-blend-multiply bg-dark-bg-hero w-full h-full' />
       <div className='pt-36'>
-        <div className='lg:container'>
+        <div className='container'>
           <HeroReview />
           <div className='max-w-[49.625rem]'>
             <HeroTitle text='BECOME A BUMPER APPROVED DEPENDABLE DEALERSHIP' />

@@ -6,7 +6,7 @@ import phoneImg from 'assets/images/phone.svg';
 const PayInfo = () => {
   return (
     <div className='bg-white'>
-      <div className='lg:container py-20'>
+      <div className='container py-20'>
         <div className='flex'>
           <div className='w-full lg:max-w-[39rem] text-active-bg-dark'>
             <div className='font-bold'><span>PayLater</span></div>

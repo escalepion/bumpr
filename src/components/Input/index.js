@@ -4,7 +4,7 @@ const Input = (props) => {
   return (
     <div>
       {!!props.label && (
-        <div className='px-2 mb-2'>
+        <div className='mb-2'>
           {props.icon && <i class={`fa-solid fa-${props.icon}`} style={{ color: '#FF733C' }}></i>}
           <span className='font-bold ml-2'>{props.label}</span>
         </div>
