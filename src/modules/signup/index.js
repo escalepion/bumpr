@@ -80,23 +80,23 @@ const SignupModule = () => {
             {({ isSubmitting }) => (
               <Form>
                 <div className='mb-8'>
-                  <Field as={Input} placeholder="Name" type="text" name="name" icon="user" label="Name" />
+                  <Field as={Input} placeholder="Name" type="text" name="name" icon="user" label="Name" data-test="name-input" />
                   <ErrorMessage name="name" component="div" />
                 </div>
                 <div className='mb-8'>
-                  <Field as={Input} placeholder="company" type="text" name="company" icon="building" label="Company" />
+                  <Field as={Input} placeholder="company" type="text" name="company" icon="building" label="Company" data-test="company-input" />
                   <ErrorMessage name="company" component="div" />
                 </div>
                 <div className='mb-8'>
-                  <Field as={Input} placeholder="Mobile phone" type="text" name="mobile_phone" icon="mobile-button" label="Mobile phone number" />
+                  <Field as={Input} placeholder="Mobile phone" type="text" name="mobile_phone" icon="mobile-button" label="Mobile phone number" data-test="phone-input" />
                   <ErrorMessage name="mobile_phone" component="div" />
                 </div>
                 <div className='mb-8'>
-                  <Field as={Input} placeholder="E-mail" type="email" name="email_address" icon="envelope" label="Email address" />
+                  <Field as={Input} placeholder="E-mail" type="email" name="email_address" icon="envelope" label="Email address" data-test="email-input" />
                   <ErrorMessage name="email_address" component="div" />
                 </div>
                 <div className='mb-8'>
-                  <Field as={Input} placeholder="Postcode" type="text" name="postcode" icon="house" label="Postcode" />
+                  <Field as={Input} placeholder="Postcode" type="text" name="postcode" icon="house" label="Postcode" data-test="postcode-input"/>
                   <ErrorMessage name="postcode" component="div" />
                 </div>
                 <div>
@@ -107,16 +107,16 @@ const SignupModule = () => {
                   <div className='text-disabled-grey text-sm'>Please select the services you’re interested in offering your customers</div>
                   <div className='flex mt-4'>
                     <div>
-                      <BorderButton onClick={handlePayLaterCLick} text="PayLater" active={payStatuses?.payLater} />
+                      <BorderButton onClick={handlePayLaterCLick} text="PayLater" active={payStatuses?.payLater} data_test="pay-later-button" />
                     </div>
                     <div className='ml-4'>
-                      <BorderButton onClick={handlePayNowClick} text="PayNow" active={payStatuses?.payNow} />
+                      <BorderButton onClick={handlePayNowClick} text="PayNow" active={payStatuses?.payNow} data_test="pay-now-button" />
                     </div>
                   </div>
                   {payError && <div className='mt-4 pl-2'>{payError}</div>}
                 </div>
                 <div>
-                  <button className='bg-shamrock mt-5 py-3 px-4 border boder-active-bg-dark rounded-full flex items-center justify-center w-full' type="submit" disabled={isSubmitting}>
+                  <button data-test="test-submit-button" className='bg-shamrock mt-5 py-3 px-4 border boder-active-bg-dark rounded-full flex items-center justify-center w-full' type="submit" disabled={isSubmitting}>
                     {submittingForm ? 'Loading...' : 'Submit'}
                     {!submittingForm && <div className='ml-2.5 pt-0.5'><i class='fa-solid fa-arrow-right'></i></div> }
                   </button>

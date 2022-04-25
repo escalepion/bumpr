@@ -26,17 +26,18 @@ const List = ({ list = [] }) => {
               placeholder="Start typing name, company, phone or email for search"
               value={term}
               onChange={(e) => setTerm(e.target.value)}
+              data-test='search-input'
             />
           </div>
         </BoxWrapper>
       </div>
       {!filteredCompanies?.length && (
         <BoxWrapper>
-          <div className='flex items-center justify-center h-20'>No company found !</div>
+          <div data-test="empty-list" className='flex items-center justify-center h-20'>No company found !</div>
         </BoxWrapper>
       )}
       {!!filteredCompanies?.length && filteredCompanies.map((item, index) => (
-        <div key={`${item.name}-${index}`} className='mb-4'>
+        <div key={`${item.name}-${index}`} className='mb-4' data-test={`list-name-${item.name}`}>
           <BoxWrapper> 
             <ListItem main text={item.name} />
             <ListItem text="Company" desc={item.company} />
