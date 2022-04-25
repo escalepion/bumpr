@@ -18,6 +18,9 @@ Created sample unit testing in src/lib/helpers directory.
 ### `npm test -- --coverage --watchAll=false`
 
 Launches the test coverage score.\
+### `npm run cypress:open`
+
+Runs e2e cypress testing\
 
 
 Note: Didn't use redux-persist for persistance. Instead just used localstorage manually since it s easy setup
